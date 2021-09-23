@@ -1,0 +1,90 @@
+.App {
+  background: #090a0e;
+  background: -webkit-linear-gradient(top left, #23343b, #000000);
+  background: -moz-linear-gradient(top left, #23343b, #000000);
+  background: linear-gradient(to bottom right, #23343b, #000000);
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.header {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #dbd70a;
+  background: -webkit-linear-gradient(top left, #23343b, #000000);
+  background: -moz-linear-gradient(top left, #23343b, #000000);
+  background: linear-gradient(to bottom right, #23343b, #000000);
+  padding-bottom: 2rem;
+}
+.header > h1{
+  color: #dbd70a;
+}
+
+.books-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  padding-bottom: 10rem;
+}
+.card {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem 2rem 0.5rem 2rem;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.card > img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.info-title {
+  font-weight: bolder;
+  color: white;
+}
+.info-authors {
+  font-size: 0.9rem;
+}
+.info-link {
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  font-weight: bolder;
+}
+.info-link:hover{
+  text-decoration: underline;
+  color: rgb(40, 40, 40);
+}
+form > input{
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  padding: 0.4rem;
+  margin-right: 0.5rem;
+  padding-left: 0.6rem;
+}
+form > button{
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.4rem 0.5rem;
+  font-size: 1rem;
+  background-color: #dbd70a;
+}
+footer{
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(40, 40, 40);
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
